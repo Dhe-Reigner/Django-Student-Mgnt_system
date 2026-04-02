@@ -81,9 +81,16 @@
   </thead>
   <tbody>
     {% for student in students %}
-
-    {}
-    <tr></tr>
+    <tr>
+    <td>{{ student.student_number }} </td>
+    <td>{{ student.first_name }} </td>
+    <td>{{ student.last_name }} </td>
+    <td>{{ student.email }} </td>
+    <td>{{ student.field_of_study }} </td>
+    <td>{{ student.gpa }} </td>
+    </tr>
+    {% endfor %}
+    
    
   </tbody>
 </table>
